@@ -36,38 +36,35 @@ def extract_info(file):
 
 def diagnosis(TSH):
     n = len(TSH)
-    diagnosis = []
+    diag = []
+    TSH1 = []
     for i in range(n):
         TSH1 = TSH[i]
         normal = 1
         for j in range(len(TSH1)):
             TSH2 = float(TSH1[j])
             if TSH2 < 1.0:
-                print('hyperthyroidism')
+                # print('hyperthyroidism')
                 normal = 0
                 result = 'hyperthyroidism'
                 break
             if TSH2 > 4.0:
-                print('hypothyroidism')
+                # print('hypothyroidism')
                 normal = 0
                 result = 'hypothyroidism'
                 break
         if normal == 1:
-            print('normal thyroid function')
+            # print('normal thyroid function')
             result = 'normal thyroid function'
-        diagnosis.append(result)
+        diag.append(result)
+    return diag
 
 
 def main_code():
     file = read_in_data()
     first_name, last_name, age, gender, TSH = extract_info(file)
-    diagnosis(TSH)
+    diag = diagnosis(TSH)
 
 
 if __name__ == "__main__":
     main_code()
-    
-        
-            
-    
-    
