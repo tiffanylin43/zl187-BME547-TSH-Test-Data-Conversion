@@ -90,9 +90,25 @@ def create_dic(patient):
     return patient
 
 
+def sort_TSH(TSH):
+    n = len(TSH)
+    TSH1 = []
+    TSH_sorted = []
+    for i in range(n):
+        TSH_numbers = []
+        TSH1 = TSH[i]
+        for j in range(len(TSH1)):
+            TSH2 = float(TSH1[j])
+            TSH_numbers.append(TSH2)
+            TSH_numbers.sort()
+        TSH_sorted.append(TSH_numbers)
+    return TSH_sorted
+
+
 def main_code():
     file = read_in_data()
     first_name, last_name, age, gender, TSH = extract_info(file)
+    TSH = sort_TSH(TSH)
     diag = diagnosis(TSH)
     for i in range(len(first_name)):
         firstname = first_name[i]
