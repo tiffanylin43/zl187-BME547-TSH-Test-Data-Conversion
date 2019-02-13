@@ -1,3 +1,6 @@
+import json
+
+
 def read_in_data():
     f = open('test_data.txt')
     file = f.readlines()
@@ -60,10 +63,61 @@ def diagnosis(TSH):
     return diag
 
 
+class patient():
+    def __init__(self, first_name, last_name, age, gender, TSH, diagnosis):
+        self.firstname = first_name
+        self.lastname = last_name
+        self.age = age
+        self.gender = gender
+        self.TSH = TSH
+        self.diagnosis = diagnosis
+
+
+def create_patient(firstname, lastname, age1, gender1,
+                   TSH_result, diag_result):
+    new_patient = patient(firstname, lastname, age1, gender1,
+                          TSH_result, diag_result)
+    return new_patient
+
+
+def create_dic(patient):
+    patient = {"First name": patient.firstname,
+               "Last name": patient.lastname,
+               "Age": patient.age,
+               "Gender": patient.gender,
+               "TSH": patient.TSH,
+               "Diagnosis": patient.diagnosis}
+    return patient
+
+
 def main_code():
     file = read_in_data()
     first_name, last_name, age, gender, TSH = extract_info(file)
     diag = diagnosis(TSH)
+    for i in range(len(first_name)):
+        firstname = first_name[i]
+        lastname = last_name[i]
+        age1 = age[i]
+        gender1 = gender[i]
+        TSH_result = TSH[i]
+        diag_result = diag[i]
+        ptnt1 = create_patient(firstname, lastname, age1, gender1,
+                               TSH_result, diag_result)
+        ptnt = create_dic(ptnt1)
+        name = [firstname, lastname]
+        connect = '-'
+        name_patient = connect.join(name)
+        name_file = name_patient + ".json"
+        out_file = open(name_file, "w")
+        json.dump(ptnt, out_file)
+        out_file.close()
+        in_file = open(name_file, "r")
+        new_variable = json.load(in_file)
+        in_file.close()
+        print("****************************************")
+        print("Contents in {} are:".format(name_file))
+        print(new_variable)
+        print("****************************************")
 
 
 if __name__ == "__main__":
