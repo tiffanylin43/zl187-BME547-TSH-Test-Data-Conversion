@@ -1,0 +1,335 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>zl187_TSH_test_data_conversion module &#8212; zl187-BME547-TSH-Test-Data-Conversion 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="test_diagnosis module" href="test_diagnosis.html" />
+    <link rel="prev" title="Welcome to zl187-BME547-TSH-Test-Data-Conversion’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-zl187_TSH_test_data_conversion">
+<span id="zl187-tsh-test-data-conversion-module"></span><h1>zl187_TSH_test_data_conversion module<a class="headerlink" href="#module-zl187_TSH_test_data_conversion" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="zl187_TSH_test_data_conversion.create_dic">
+<code class="descclassname">zl187_TSH_test_data_conversion.</code><code class="descname">create_dic</code><span class="sig-paren">(</span><em>patient</em><span class="sig-paren">)</span><a class="headerlink" href="#zl187_TSH_test_data_conversion.create_dic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a dictionary based on input patient</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>patient</strong> – variable of class “patient”</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">dictionary created containing infomation of patient</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">patient_info</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zl187_TSH_test_data_conversion.create_json_and_print">
+<code class="descclassname">zl187_TSH_test_data_conversion.</code><code class="descname">create_json_and_print</code><span class="sig-paren">(</span><em>first_name</em>, <em>last_name</em>, <em>age</em>, <em>gender</em>, <em>TSH</em>, <em>diag</em>, <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#zl187_TSH_test_data_conversion.create_json_and_print" title="Permalink to this definition">¶</a></dt>
+<dd><p>create json file and print its contents</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>first_name</strong> – first name of the patient</li>
+<li><strong>last_name</strong> – last name of the patient</li>
+<li><strong>age</strong> – age of the patient</li>
+<li><strong>gender</strong> – gender of the patient</li>
+<li><strong>TSH</strong> – TSH test results of the patient</li>
+<li><strong>diag</strong> – diagnosis of the patient</li>
+<li><strong>i</strong> – the number of the patient in the list</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">none</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zl187_TSH_test_data_conversion.create_patient">
+<code class="descclassname">zl187_TSH_test_data_conversion.</code><code class="descname">create_patient</code><span class="sig-paren">(</span><em>firstname</em>, <em>lastname</em>, <em>age1</em>, <em>gender1</em>, <em>TSH_result</em>, <em>diag_result</em><span class="sig-paren">)</span><a class="headerlink" href="#zl187_TSH_test_data_conversion.create_patient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new variable of class “patient”</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>firstname</strong> – fisrt name of patient</li>
+<li><strong>lastname</strong> – last name of patient</li>
+<li><strong>age1</strong> – age of patient</li>
+<li><strong>gender1</strong> – gender of patient</li>
+<li><strong>TSH_result</strong> – TSH results of patient</li>
+<li><strong>diag_result</strong> – diagnosis of patient</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">new variable of the class “patient”</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">new_patient</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zl187_TSH_test_data_conversion.diagnosis">
+<code class="descclassname">zl187_TSH_test_data_conversion.</code><code class="descname">diagnosis</code><span class="sig-paren">(</span><em>TSH</em><span class="sig-paren">)</span><a class="headerlink" href="#zl187_TSH_test_data_conversion.diagnosis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Diagnose the patients by the input TSH test results</p>
+<p>“hyperthyroidism” - any of their tests results being less than 1.0,
+“hypothyroidism” - any of their test results being greater than 4.0, or
+“normal thyroid function” - all of their test results being</p>
+<blockquote>
+<div>between 1.0 and 4.0, inclusive.</div></blockquote>
+<p>No single patient will have test results both above 4.0 and below 1.0,
+hence will only meet one of the diagnoses above.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>TSH</strong> – TSH results from patients</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">diagnoses of all patients from TSH results input</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">diag</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zl187_TSH_test_data_conversion.extract_info">
+<code class="descclassname">zl187_TSH_test_data_conversion.</code><code class="descname">extract_info</code><span class="sig-paren">(</span><em>file</em><span class="sig-paren">)</span><a class="headerlink" href="#zl187_TSH_test_data_conversion.extract_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract the information needed from input file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file</strong> – input that contains information of patients,
+which need to be extracted</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a list contains first names of all patients in file
+last_name: a list contains last names of all patients in file
+age: a list contains ages of all patients in file
+gender: a list contains genders of all patients in file
+TSH: a list contains TSH results of all patients in file</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">first_name</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zl187_TSH_test_data_conversion.main_code">
+<code class="descclassname">zl187_TSH_test_data_conversion.</code><code class="descname">main_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zl187_TSH_test_data_conversion.main_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>main code for the program</p>
+<p>The main code is to call the functions listed above
+to reach the requirements of this assignment.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>none</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">none</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="zl187_TSH_test_data_conversion.patient">
+<em class="property">class </em><code class="descclassname">zl187_TSH_test_data_conversion.</code><code class="descname">patient</code><span class="sig-paren">(</span><em>first_name</em>, <em>last_name</em>, <em>age</em>, <em>gender</em>, <em>TSH</em>, <em>diagnosis</em><span class="sig-paren">)</span><a class="headerlink" href="#zl187_TSH_test_data_conversion.patient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class that has attributes of a certain patient in file</p>
+<dl class="attribute">
+<dt id="zl187_TSH_test_data_conversion.patient.first_name">
+<code class="descname">first_name</code><a class="headerlink" href="#zl187_TSH_test_data_conversion.patient.first_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>first name of the patient</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="zl187_TSH_test_data_conversion.patient.last_name">
+<code class="descname">last_name</code><a class="headerlink" href="#zl187_TSH_test_data_conversion.patient.last_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>last name of the patient</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="zl187_TSH_test_data_conversion.patient.age">
+<code class="descname">age</code><a class="headerlink" href="#zl187_TSH_test_data_conversion.patient.age" title="Permalink to this definition">¶</a></dt>
+<dd><p>age of the patient</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="zl187_TSH_test_data_conversion.patient.gender">
+<code class="descname">gender</code><a class="headerlink" href="#zl187_TSH_test_data_conversion.patient.gender" title="Permalink to this definition">¶</a></dt>
+<dd><p>gender of the patient</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="zl187_TSH_test_data_conversion.patient.TSH">
+<code class="descname">TSH</code><a class="headerlink" href="#zl187_TSH_test_data_conversion.patient.TSH" title="Permalink to this definition">¶</a></dt>
+<dd><p>TSH test results of the patient</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="zl187_TSH_test_data_conversion.patient.diagnosis">
+<code class="descname">diagnosis</code><a class="headerlink" href="#zl187_TSH_test_data_conversion.patient.diagnosis" title="Permalink to this definition">¶</a></dt>
+<dd><p>diagnosis of the patient</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="zl187_TSH_test_data_conversion.read_in_data">
+<code class="descclassname">zl187_TSH_test_data_conversion.</code><code class="descname">read_in_data</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#zl187_TSH_test_data_conversion.read_in_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in the data from .txt file named filename</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> – full name of the file that needs to be read in
+with suffix of .txt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="docutils">
+<dt>the contents in filename.txt line by line without</dt>
+<dd>”/n” at the end of each line</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">file</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="zl187_TSH_test_data_conversion.sort_TSH">
+<code class="descclassname">zl187_TSH_test_data_conversion.</code><code class="descname">sort_TSH</code><span class="sig-paren">(</span><em>TSH</em><span class="sig-paren">)</span><a class="headerlink" href="#zl187_TSH_test_data_conversion.sort_TSH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sort the list of TSH values (low to high)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>TSH</strong> – TSH results of patients</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">sorted TSH results (low to high)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">TSH_sorted</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">zl187-BME547-TSH-Test-Data-Conversion</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">zl187_TSH_test_data_conversion module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="test_diagnosis.html">test_diagnosis module</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to zl187-BME547-TSH-Test-Data-Conversion’s documentation!</a></li>
+      <li>Next: <a href="test_diagnosis.html" title="next chapter">test_diagnosis module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Zhen Lin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/zl187_TSH_test_data_conversion.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
