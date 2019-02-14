@@ -68,6 +68,9 @@ There are a lot of files uploaded this time. And they are either in folder or ou
 ## Contact information
 Thanks for visiting! Any questiones and suggestions related to this program can be emailed directly to the writer `Zhen Lin` at `zl187@duke.edu`.
 
+## Question
+When going through my commits, I found there was an strange error with travisCI in "Update README.md". It seems that the test passed before it failed. And the reason for failure seems to have nothing to do with my files. It seems that the travisCI failed in building process. I'm not sure what the issue is here.
+
 
 
 
