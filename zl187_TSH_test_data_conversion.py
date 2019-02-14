@@ -60,7 +60,7 @@ def extract_info(file):
         gender.append(gender1)
         # extract the information of TSH results from every 4 lines
         TSH_str = file[4*i+3]
-        # split the elements by "," to get each TSH test result 
+        # split the elements by "," to get each TSH test result
         TSH1 = TSH_str.split(',')
         # delete the first element in the list, which is "TSH"
         TSH1.pop(0)
