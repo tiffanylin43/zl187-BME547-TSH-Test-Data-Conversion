@@ -16,6 +16,7 @@ def read_in_data(filename):
     file = f.readlines()
     num_line = 0
     for line in file:
+        # get rid of the "/n" at the end of each line
         line = line.strip()
         if num_line < len(file):
             file[num_line] = line
@@ -45,16 +46,23 @@ def extract_info(file):
     gender = []
     TSH = []
     for i in range(n):
+        # extract the information of names from every 4 lines
         name = file[4*i]
+        # split the full name by space to get first and last name respectively
         first_name1, last_name1 = name.split()
         first_name.append(first_name1)
         last_name.append(last_name1)
+        # extract the information of ages from every 4 lines
         age1 = file[4*i+1]
         age.append(age1)
+        # extract the information of genders from every 4 lines
         gender1 = file[4*i+2]
         gender.append(gender1)
+        # extract the information of TSH results from every 4 lines
         TSH_str = file[4*i+3]
+        # split the elements by "," to get each TSH test result 
         TSH1 = TSH_str.split(',')
+        # delete the first element in the list, which is "TSH"
         TSH1.pop(0)
         TSH.append(TSH1)
     return first_name, last_name, age, gender, TSH
@@ -217,13 +225,16 @@ def create_json_and_print(first_name, last_name, age, gender,
     ptnt1 = create_patient(firstname, lastname, age1, gender1,
                            TSH_result, diag_result)
     ptnt = create_dic(ptnt1)
+    # create the file name
     name = [firstname, lastname]
     connect = '-'
     name_patient = connect.join(name)
     name_file = name_patient + ".json"
+    # create the json file
     out_file = open(name_file, "w")
     json.dump(ptnt, out_file)
     out_file.close()
+    # read in the json file and print it out
     in_file = open(name_file, "r")
     new_variable = json.load(in_file)
     in_file.close()
