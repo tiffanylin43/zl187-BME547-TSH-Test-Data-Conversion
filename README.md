@@ -53,7 +53,7 @@ There are a lot of files uploaded this time. And they are either in folder or ou
 
 * `.travis.yml` and `requirements.txt` are used for initializing travisCI.
 
-* `test_zl187_TSH_test_data_conversion.py` is the file used for testing the function `diagnosis()`. It has been renamed from test_diagnosis after I read the commits of last assignment.
+* `test_zl187_TSH_test_data_conversion.py` is the file used for testing the function `diagnosis()`. It has been renamed from test_diagnosis after I read the comments of last assignment.
 
 * `zl187_TSH_test_data_conversion.py` - Codes for this assignment.
 
